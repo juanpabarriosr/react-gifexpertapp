@@ -1,0 +1,22 @@
+import React from 'react';
+
+export const GifExpertApp = () => {
+    return (
+        <>
+            <h2>GifExpertApp</h2>
+            <hr />
+        </>
+    )
+}
+
+
+// function GifExpertApp() {
+//     return(
+//         <>
+//             <h2>GifExpertApp</h2>
+//             <hr />
+//         </>
+//     )
+    
+// }
+// export default GifExpertApp;
