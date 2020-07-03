@@ -1,25 +1,22 @@
 import React, { useState } from 'react';
+import { AddCategory } from './components/AddCategory';
 
 export const GifExpertApp = () => {
 
-    // No se hace con []
-    // const categories = ['One Punch', 'Samurai X', 'Dragon Ball'];
-
     const [categories, setCategories] = useState(['One Punch', 'Samurai X', 'Dragon Ball']);
     
-    const handleAdd = () => {
-        // setCategories( [...categories, 'HunterXHunter']);
-        setCategories( cats => [ ...cats, 'HunterXHunter' ]);
-        // setCategories( cats => [ ...categories, 'HunterXHunter' ]);
-
-    }
+    // const handleAdd = () => {
+    //     // setCategories( [...categories, 'HunterXHunter']);
+    //     setCategories( cats => [ ...cats, 'HunterXHunter' ]);
+    // }
 
     return (
         <>
             <h2>GifExpertApp</h2>
+            <AddCategory />
             <hr />
 
-            <button onClick= { handleAdd } >Agregar</button>
+            
 
             <ol>
             {
@@ -33,15 +30,3 @@ export const GifExpertApp = () => {
        
     )
 }
-
-
-// function GifExpertApp() {
-//     return(
-//         <>
-//             <h2>GifExpertApp</h2>
-//             <hr />
-//         </>
-//     )
-    
-// }
-// export default GifExpertApp;
